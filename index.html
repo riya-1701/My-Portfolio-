@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IA-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riya - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(1, 1, 22);
+        color: white;
+        font-family: "Poppins", sans-serif;
+
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        background-color: rgb(1, 1, 71);
+        width: 1216.67px;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(130, 130, 245);
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .leftSection, .rightSection {
+        width: 50%;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 50px 0 0px;
+        align-items: center;
+      }
+      .firstSection div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 2.5rem;
+      }
+      .rightSection img {
+        margin: 0px 0 0 55px;
+        width: 310px;
+        height: 350px;
+      }
+      .text-purple {
+        color: blueviolet;
+      }
+      .text-grey {
+        color: rgb(155, 153, 153);
+      }
+      .social-media {
+        clear: both;
+        font-size: 20px;
+        width: 100%;
+        margin: 0px 105px;
+      }
+      .social-media a {
+        padding: 0px 0 0 32px;
+        margin: 0px;
+        color: white;
+      }
+      button{
+        padding: 7px 15px;
+        display: inline-block;
+        margin: 20px 0px 0px 155px;
+        background-color: rgb(1, 1, 22);
+        border: 2px solid white;
+        border-radius: 40px;
+        font-size: 1.1rem;
+        font-weight: 650;
+        cursor: pointer;
+      }
+    button a{
+        color: blueviolet;
+        text-decoration: none;
+        text-align: center;
+    }
+      #element {
+        color: blueviolet;
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.8rem;
+      }
+      .box {
+        background-color: white;
+      }
+      main hr {
+        border: 0;
+        height: 2px;
+        margin: 45px 260px;
+        background-color: rgb(161, 161, 247);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">My Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="firstSection">
+        <div class="leftSection">
+          Hello, My name is <span class="text-purple">Riya Srivastava</span> and I am a
+          passionate
+          <!-- Element to contain animated typing (copied from cdn website)-->
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="Vri.jpeg" alt="Developer PC" />
+        </div>
+      </div>
+      <div class="social-media">
+        <a href="https://github.com/riya-1701" target="_blank" class="bx bxl-github"></a>
+        <a href="https://www.linkedin.com/in/riya1701/" target="_blank" class="bx bxl-linkedin-square"></a>
+        <a href="https://www.instagram.com/_vriddhiiiii_/" target="_blank" class="bx bxl-instagram"></a>
+        <a href="https://www.facebook.com/riyasrivastava1701/" target="_blank" class="bx bxl-facebook"></a>
+      </div>
+      <button type="button">
+        <a href="CV.pdf" aria-label="CV" download class="btn">Download CV</a>
+      </button>
+      <hr>
+    </main>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Software Developer","Web Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
